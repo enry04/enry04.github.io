@@ -1,0 +1,109 @@
+.hero-section {
+    text-align: center;
+    padding: 3rem 2rem;  /* Reduced from 6rem to 3rem */
+    background: linear-gradient(135deg, 
+        #006600 0%,
+        #004400 40%,
+        #cc0000 100%
+    );
+    color: #ffffff;
+    min-height: 40vh;    /* Reduced from 60vh to 40vh */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section h1 {
+    font-size: 2.8rem;   /* Reduced from 3.5rem to 2.8rem */
+    margin-bottom: 0.8rem;  /* Reduced from 1rem to 0.8rem */
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero-section p {
+    font-size: 1.1rem;   /* Reduced from 1.2rem to 1.1rem */
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.8;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.stat-card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: 2px solid #cc0000;  /* Portuguese red */
+}
+
+.stat-card h3 {
+    color: #006600;  /* Portuguese green */
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.stat-card p {
+    color: #cc0000;  /* Portuguese red */
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    color: #006600;  /* Portuguese green */
+    border-bottom: 2px solid #cc0000;  /* Portuguese red */
+    padding-bottom: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2rem;
+    margin: 2rem 0 1rem 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+ul li {
+    color: #333;
+    margin: 0.8rem 0;
+    padding-left: 1rem;
+    border-left: 3px solid #cc0000;  /* Portuguese red */
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.featured-image {
+    max-width: 40%;  /* Changed from 100% to 60% */
+    height: auto;
+    border-radius: 10px;
+    margin: 2rem auto;
+    border: 4px solid #006600;
+    display: block;
+}
