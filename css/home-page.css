@@ -5,14 +5,14 @@ html, body {
 
 .hero-section {
     text-align: center;
-    padding: 3rem 2rem;  /* Reduced from 6rem to 3rem */
-    background: linear-gradient(135deg, 
+    padding: 2rem 1.5rem;  /* slightly smaller hero */
+    background: linear-gradient(135deg,
         #006600 0%,
         #004400 40%,
         #cc0000 100%
     );
     color: #ffffff;
-    min-height: 40vh;    /* Reduced from 60vh to 40vh */
+    min-height: 28vh;    /* make hero smaller */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,7 +20,7 @@ html, body {
 }
 
 .hero-section h1 {
-    font-size: 2.8rem;   /* Reduced from 3.5rem to 2.8rem */
+    font-size: 2.4rem;   /* slightly smaller title */
     margin-bottom: 0.8rem;  /* Reduced from 1rem to 0.8rem */
     font-family: inherit;
     color: #ffffff;
@@ -106,10 +106,40 @@ ul li {
 }
 
 .featured-image {
-    max-width: 40%;  /* Changed from 100% to 60% then to 40% */
+    max-width: 40%;
     height: auto;
     border-radius: 10px;
     margin: 2rem auto;
     border: 4px solid #006600;
     display: block;
+}
+
+/* New: smaller variant for the second image and layout tweaks */
+.featured-image--small {
+    max-width: 28%;
+    border-radius: 8px;
+    margin-top: 1rem;
+    border: 3px solid #cc0000;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+    display: block;
+}
+
+/* Optional: place images in a centered row on larger screens */
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    align-items: center;
+    margin: 0.75rem 0 2rem;
+}
+
+/* Responsive: stack and scale images on small viewports */
+@media (max-width: 800px) {
+    .featured-image,
+    .featured-image--small {
+        max-width: 80%;
+    }
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
 }

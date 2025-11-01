@@ -1,11 +1,27 @@
 header {
     background-color: #006600;  /* Portuguese green */
-    padding: 1rem;
-    position: sticky;
+    padding: 1.25rem 2rem;         /* larger header */
+    position: relative;
     top: 0;
     z-index: 100;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;      /* keep nav centered */
+    min-height: 76px;
+    top: 0;
 }
+
+/* logo positioned top-left inside the header */
+.header-logo-link { position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); }
+.header-logo {
+    width: 150px;      /* small logo */
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.12);
+}
+
+/* ensure nav stays above logo if necessary */
+nav { z-index: 101; }
 
 nav ul {
     list-style: none;
