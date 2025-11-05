@@ -15,7 +15,7 @@ header {
 /* logo positioned top-left inside the header */
 .header-logo-link { position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); }
 .header-logo {
-    width: 92px;      /* larger top-left logo */
+    width: 40px;      /* larger top-left logo */
     height: auto;
     display: block;
     border-radius: 6px;
