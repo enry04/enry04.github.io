@@ -1,5 +1,4 @@
 header {
-    background-color: #006600;  /* Portuguese green */
     padding: 1.25rem 2rem;         /* larger header */
     position: relative;
     top: 0;
@@ -13,9 +12,10 @@ header {
 }
 
 /* logo positioned top-left inside the header */
-.header-logo-link { position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); }
+.header-logo-link {
+    position: absolute; left: 1rem; top: 50%; transform: translateY(-50%);
+}
 .header-logo {
-    width: 40px;      /* larger top-left logo */
     height: auto;
     display: block;
     border-radius: 6px;

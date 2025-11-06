@@ -1,6 +1,15 @@
-/* Global basic/system font */
+
 html, body {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-portugal {
+    background-color: #004400; 
+    color: #ffffff;
+}
+
+.header-portugal-logo {
+     width: 30px;    
 }
 
 .hero-section {
@@ -131,15 +140,4 @@ ul li {
     gap: 1.25rem;
     align-items: center;
     margin: 0.75rem 0 2rem;
-}
-
-/* Responsive: stack and scale images on small viewports */
-@media (max-width: 800px) {
-    .featured-image,
-    .featured-image--small {
-        max-width: 80%;
-    }
-    .stats-grid {
-        grid-template-columns: 1fr;
-    }
 }
