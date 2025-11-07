@@ -107,79 +107,194 @@ html, body {
     line-height: 1.8;
 }
 
-/* Stats grid & cards */
-.stats-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin: 3rem 0;
+/* Stile unico per il main della pagina Real Madrid */
+.main-real {
+    padding: 2.25rem;
+    background: linear-gradient(180deg, rgba(11,42,106,0.03), rgba(255,255,255,0.02));
 }
 
-.stat-card {
-    background-color: var(--real-white);
-    padding: 1.5rem;
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+/* Colonna di contenuto */
+.card-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+/* Card riassuntiva con bordo sfumato */
+.summary-card {
+    background: linear-gradient(90deg, rgba(11,42,106,0.03), rgba(255,255,255,0.015));
+    border-left: 6px solid #0b2a6a;
+    padding: 1.2rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(3,10,30,0.04);
+}
+
+.summary-card h2 {
+    margin: 0 0 0.35rem 0;
+    color: #0b2a6a;
+}
+
+.summary-card p {
+    margin: 0;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Statistiche orizzontali */
+.meta-row {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 0.2rem;
+}
+
+.stat {
+    flex: 1;
+    background: #fff;
+    padding: 0.7rem;
     border-radius: 8px;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
-    border: 2px solid var(--real-gold);
+    box-shadow: 0 6px 16px rgba(3,10,30,0.05);
 }
 
-.stat-card h3 {
-    color: var(--real-navy);
-    margin-bottom: 1rem;
-    font-family: inherit;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.stat-card p {
-    color: var(--real-gold);
-    font-size: 2rem;
-    font-weight: bold;
-    font-family: inherit;
-}
-
-/* Headings and paragraphs */
-h2 {
-    color: var(--real-navy);
-    border-bottom: 2px solid var(--real-gold);
-    padding-bottom: 0.5rem;
-    font-family: inherit;
-    font-size: 2.2rem;
-    margin: 2rem 0 1rem 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-p {
-    margin-bottom: 1.5rem;
-    font-size: 1.1rem;
-    font-family: inherit;
-}
-
-/* Lists */
-ul li {
-    color: #333;
-    margin: 0.8rem 0;
-    padding-left: 1rem;
-    border-left: 3px solid var(--real-gold);
-    font-size: 1.1rem;
-    line-height: 1.6;
-    font-family: inherit;
-}
-
-/* Images */
-.featured-image {
-    max-width: 40%;
-    height: auto;
-    border-radius: 10px;
-    margin: 2rem auto;
-    border: 4px solid var(--real-gold);
+.stat strong {
     display: block;
+    font-size: 1.25rem;
+    color: #0b2a6a;
 }
 
-/* Responsive adjustments */
+.stat span {
+    display: block;
+    font-size: 0.85rem;
+    color: #555;
+}
+
+/* Timeline verticale semplice */
+.timeline {
+    background: rgba(11,42,106,0.02);
+    border-radius: 8px;
+    padding: 0.9rem;
+}
+
+.timeline h3 {
+    margin: 0 0 0.6rem 0;
+    color: #0b2a6a;
+    font-size: 1.05rem;
+}
+
+.timeline ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline li {
+    position: relative;
+    padding-left: 2.2rem;
+    margin-bottom: 0.85rem;
+}
+
+.timeline li::before {
+    content: "";
+    position: absolute;
+    left: 0.6rem;
+    top: 0.6rem;
+    width: 10px;
+    height: 10px;
+    background: #0b2a6a;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(11,42,106,0.12);
+}
+
+.timeline time {
+    display: block;
+    font-weight: 700;
+    color: #0b2a6a;
+    font-size: 0.9rem;
+}
+
+/* Colonna visiva con immagine caratteristica */
+.visual-col .img-frame {
+    position: relative;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    transform: rotate(-1.8deg);
+    box-shadow: 0 18px 40px rgba(3,10,30,0.12);
+    background: linear-gradient(135deg, rgba(11,42,106,0.03), rgba(255,255,255,0.02));
+}
+
+.visual-col img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transform: rotate(1.8deg);
+}
+
+/* Badge flottante */
+.floating-badge {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    background: #0b2a6a;
+    color: #fff;
+    padding: 0.45rem 0.7rem;
+    border-radius: 999px;
+    font-weight: 700;
+    box-shadow: 0 8px 18px rgba(11,42,106,0.18);
+    font-size: 0.9rem;
+}
+
+/* CTA */
+.cta-row {
+    display: flex;
+    gap: 0.6rem;
+    margin-top: 0.4rem;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 0.5rem 0.85rem;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.btn-primary {
+    background: #0b2a6a;
+    color: #fff;
+}
+
+.btn-secondary {
+    background: #f4f6fb;
+    color: #0b2a6a;
+    border: 1px solid rgba(11,42,106,0.06);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .visual-col .img-frame {
+        transform: none;
+    }
+
+    .visual-col img {
+        transform: none;
+    }
+}
+
 @media (max-width: 800px) {
     .featured-image {
         max-width: 80%;
