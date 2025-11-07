@@ -1,8 +1,4 @@
 
-html, body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 .header-portugal {
     background-color: #004400; 
     color: #ffffff;
@@ -12,47 +8,19 @@ html, body {
      width: 30px;    
 }
 
-.hero-section {
-    text-align: center;
-    padding: 2rem 1.5rem;  /* slightly smaller hero */
+.hero-section-portugal {
     background: linear-gradient(135deg,
         #006600 0%,
         #004400 40%,
         #cc0000 100%
     );
-    color: #ffffff;
-    min-height: 28vh;    /* make hero smaller */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero-section h1 {
-    font-size: 2.4rem;   /* slightly smaller title */
-    margin-bottom: 0.8rem;  /* Reduced from 1rem to 0.8rem */
-    font-family: inherit;
-    color: #ffffff;
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-.hero-section p {
-    font-size: 1.1rem;   /* Reduced from 1.2rem to 1.1rem */
-    font-family: inherit;
-    letter-spacing: 1px;
-    line-height: 1.6;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .main-content {
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
     padding: 2rem;
     color: #333;
-    font-family: inherit;
-    line-height: 1.8;
 }
 
 .stats-grid {
@@ -63,81 +31,59 @@ html, body {
 }
 
 .stat-card {
-    background-color: #ffffff;
     padding: 1.5rem;
     border-radius: 8px;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    border: 2px solid #cc0000;  /* Portuguese red */
+    border: 2px solid #cc0000;  
 }
 
 .stat-card h3 {
-    color: #006600;  /* Portuguese green */
+    color: #006600;  
     margin-bottom: 1rem;
-    font-family: inherit;
     font-size: 1.4rem;
-    text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .stat-card p {
-    color: #cc0000;  /* Portuguese red */
+    color: #cc0000;  
     font-size: 2rem;
     font-weight: bold;
-    font-family: inherit;
 }
 
 h2 {
-    color: #006600;  /* Portuguese green */
-    border-bottom: 2px solid #cc0000;  /* Portuguese red */
+    color: #006600; 
+    border-bottom: 2px solid #cc0000;  
     padding-bottom: 0.5rem;
-    font-family: inherit;
     font-size: 2.2rem;
     margin: 2rem 0 1rem 0;
-    text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 p {
     margin-bottom: 1.5rem;
     font-size: 1.1rem;
-    font-family: inherit;
 }
 
 ul li {
     color: #333;
     margin: 0.8rem 0;
     padding-left: 1rem;
-    border-left: 3px solid #cc0000;  /* Portuguese red */
-    font-size: 1.1rem;
+    border-left: 3px solid #cc0000;  
     line-height: 1.6;
-    font-family: inherit;
+}
+
+nav a {
+    color: white;
+}
+
+nav a:hover {
+    color: #cc0000; 
 }
 
 .featured-image {
     max-width: 40%;
-    height: auto;
     border-radius: 10px;
     margin: 2rem auto;
     border: 4px solid #006600;
     display: block;
-}
-
-/* New: smaller variant for the second image and layout tweaks */
-.featured-image--small {
-    max-width: 28%;
-    border-radius: 8px;
-    margin-top: 1rem;
-    border: 3px solid #cc0000;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
-    display: block;
-}
-
-/* Optional: place images in a centered row on larger screens */
-.image-row {
-    display: flex;
-    justify-content: center;
-    gap: 1.25rem;
-    align-items: center;
-    margin: 0.75rem 0 2rem;
 }

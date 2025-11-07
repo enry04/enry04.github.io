@@ -1,103 +1,29 @@
-:root {
-    --real-white: #FFFFFF;
-    --real-gold: #CAA767;
-    --real-navy: #00529F;
-}
 
-/* Header (Real Madrid) */
 .header-real-madrid {
-    background-color: var(--real-white);
-    border-bottom: 3px solid var(--real-gold);
-    padding: 1.25rem 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 76px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
-}
-
-.header-real-madrid .header-logo-link {
-    position: absolute;
-    left: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
+    background-color: #FFFFFF;
+    border-bottom: 3px solid #CAA767;
 }
 
 .real-madrid-logo {
     width: 60px;
-    height: auto;
-    border-radius: 6px;
-    border: 3px solid var(--real-gold);
-    display: block;
-}
-
-.header-real-madrid nav { z-index: 101; }
-
-.header-real-madrid nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin: 0;
-    padding: 0;
 }
 
 .header-real-madrid nav a {
-    text-decoration: none;
-    color: var(--real-navy);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.05rem;
-    font-weight: 600;
-    transition: color 0.2s ease;
+    color: #00529F;
 }
 
 .header-real-madrid nav a:hover {
-    color: var(--real-gold);
+    color: #CAA767;
 }
 
-/* Typography & base (match home page) */
-html, body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #222;
-    margin: 0;
-}
-
-/* Hero section (Real Madrid palette) */
-.hero-section {
-    text-align: center;
-    padding: 2rem 1.5rem;
+.hero-section-real-madrid {
     background: linear-gradient(135deg,
-        var(--real-navy) 0%,
+        #00529F 0%,
         #003366 40%,
-        var(--real-gold) 100%
+        #CAA767 100%
     );
-    color: var(--real-white);
-    min-height: 28vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
-.hero-section h1 {
-    font-size: 2.4rem;
-    margin-bottom: 0.8rem;
-    font-family: inherit;
-    color: var(--real-white);
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.18);
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-.hero-section p {
-    font-size: 1.1rem;
-    font-family: inherit;
-    letter-spacing: 1px;
-    line-height: 1.6;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.12);
-}
-
-/* Main content base (same as home page) */
 .main-content {
     max-width: 1200px;
     margin: 0 auto;
@@ -107,7 +33,6 @@ html, body {
     line-height: 1.8;
 }
 
-/* Stile unico per il main della pagina Real Madrid */
 .main-real {
     padding: 2.25rem;
     background: linear-gradient(180deg, rgba(11,42,106,0.03), rgba(255,255,255,0.02));
@@ -122,14 +47,13 @@ html, body {
     align-items: start;
 }
 
-/* Colonna di contenuto */
 .card-col {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
 }
 
-/* Card riassuntiva con bordo sfumato */
+
 .summary-card {
     background: linear-gradient(90deg, rgba(11,42,106,0.03), rgba(255,255,255,0.015));
     border-left: 6px solid #0b2a6a;
@@ -149,7 +73,6 @@ html, body {
     line-height: 1.6;
 }
 
-/* Statistiche orizzontali */
 .meta-row {
     display: flex;
     gap: 0.75rem;
@@ -177,7 +100,6 @@ html, body {
     color: #555;
 }
 
-/* Timeline verticale semplice */
 .timeline {
     background: rgba(11,42,106,0.02);
     border-radius: 8px;
@@ -221,7 +143,6 @@ html, body {
     font-size: 0.9rem;
 }
 
-/* Colonna visiva con immagine caratteristica */
 .visual-col .img-frame {
     position: relative;
     width: 100%;
@@ -240,7 +161,6 @@ html, body {
     transform: rotate(1.8deg);
 }
 
-/* Badge flottante */
 .floating-badge {
     position: absolute;
     right: 12px;
@@ -254,7 +174,6 @@ html, body {
     font-size: 0.9rem;
 }
 
-/* CTA */
 .cta-row {
     display: flex;
     gap: 0.6rem;
@@ -278,28 +197,4 @@ html, body {
     background: #f4f6fb;
     color: #0b2a6a;
     border: 1px solid rgba(11,42,106,0.06);
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-    .main-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .visual-col .img-frame {
-        transform: none;
-    }
-
-    .visual-col img {
-        transform: none;
-    }
-}
-
-@media (max-width: 800px) {
-    .featured-image {
-        max-width: 80%;
-    }
-    .stats-grid {
-        grid-template-columns: 1fr;
-    }
 }

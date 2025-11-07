@@ -1,0 +1,62 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 1.25rem 2rem;         
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;     
+    min-height: 76px;
+}
+
+.header-logo-link {
+    position: absolute;
+    left: 1rem;
+}
+.header-logo {
+    border-radius: 6px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    padding: 0.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 2rem 1.5rem; 
+    color: #ffffff;
+    height: 250px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section h1 {
+    font-size: 2.4rem;   
+    margin-bottom: 0.8rem;  
+    letter-spacing: 2px;
+}
+
+.hero-section p {
+    font-size: 1.1rem;  
+    letter-spacing: 1px;
+}
